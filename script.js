@@ -139,9 +139,47 @@ function loneSum(param1,param2,param3) {
     }
     return sum;
 }
+//write eleventh method
+function firstLast6(param1) {
 
-//instructions and call for method 1
-//DONE!!
+}
+//write twelfth method
+function has_23(param1) {
+
+}
+//write thirteenth method
+function fix_23(param1) {
+
+}
+//write fourteenth method
+function countYZ(param1) {
+
+}
+//write fifteenth method
+function endOther(param1) {
+
+}
+//write sixteenth method
+function starOut(param1) {
+
+}
+//write seventeenth method
+function getSandwich(param1) {
+
+}
+//write eighteenth method
+function canBalance(param1) {
+
+}
+//write nineteenth method
+function countClumps(param1) {
+
+}
+//write twentieth method
+function evenlySpaced(param1) {
+
+}
+
 function tester1() {
     //output becomes the return of sleepIn
     //whether it's a school day or a holiday
@@ -149,8 +187,6 @@ function tester1() {
     //return false if  both are false
     document.getElementById("output0").innerHTML = sleepIn(false, false);
 }
-//instructions and call for method 2
-//DONE!!
 function tester2() {
     //output becomes the return of monkeyTrouble
     //monkeys smiling? bad idea
@@ -158,29 +194,21 @@ function tester2() {
     //if both or none return true
     document.getElementById("output1").innerHTML = monkeyTrouble(false, false);
 }
-//instructions and call for method 3
-//DONE!!
 function tester3() {
     //output becomes the return of stringTimes
     //returns a string n times
     document.getElementById("output2").innerHTML = stringTimes("Hey",2);
 }
-//instructions and call for method 4
-//DONE!!
 function tester4() {
     //output becomes the return of frontTimes
     //returns the first three letters of the string n times
     document.getElementById("output3").innerHTML = frontTimes("Cool",4);
 }
-//instructions and call for method 5
-//DONE!!
 function tester5() {
     //output becomes the return of stringBits
     //returns every other letter of the string
     document.getElementById("output4").innerHTML = stringBits("curse aisle");
 }
-//instructions and call for method 6
-//DONE!!
 function tester6() {
     //output becomes the return of caughtSpeeding
     //0 to 60 returns no ticket,(0)
@@ -189,8 +217,6 @@ function tester6() {
     //unless it's your birthday, then your speed can be five higher
     document.getElementById("output5").innerHTML = caughtSpeeding(83,true);
 }
-//instructions and call for method 7
-//DONE!!
 function tester7() {
     //output becomes the return of FizzBuzz
     //returns the string form of a number followed by !
@@ -199,8 +225,6 @@ function tester7() {
     //if both 5 and 3 return FizzBuzz
     document.getElementById("output6").innerHTML = fizzBuzz(30);
 }
-//instructions and call for method 8
-//DONE!!
 function tester8() {
     //output becomes the return of teaParty
     //returns 0 = bad party:
@@ -210,19 +234,95 @@ function tester8() {
 
     document.getElementById("output7").innerHTML = teaParty(5,15);
 }
-//instructions and call for method 9
-//DONE!!
 function tester9() {
     //output becomes the return of blackJack
     //return one integer, of the two, whichever is closest to 21 without going over
     //returns 0 if they both go over
     document.getElementById("output8").innerHTML = blackJack(22,19);
 }
-//instructions and call for method 10
 function tester10() {
     //output becomes the return of loneSum
     //returns the sum of a, b, and c.
     //unless a value is the same as another
     //ie: 5,4,6 = 15; 3,3,3 = 0; 5,5,16 = 16
     document.getElementById("output9").innerHTML = loneSum(3,6,9);
+}
+function tester11() {
+    //output becomes the return of firstLast6
+        //arrays can be written by calling a
+        //var y = ["c","a","l","l","m","e"];
+    //firstLast6 gets an array of integers
+    //if the first or last is "6" return true
+    document.getElementById("output10").innerHTML = firstLast6([4,5,2,3,7,6]);
+}
+function tester12() {
+    //output becomes the return of has_23
+    //given an array of two integers,
+    //return true if either is a two or three
+    document.getElementById("output11").innerHTML = has_23();
+}
+function tester13() {
+    //output becomes the return of fix_23
+    //given an array of three integers,
+    //if an integer 2 is followed by a three
+    //return the array with the 3 turned into a zero
+    //ie: 234 = 204
+    document.getElementById("output12").innerHTML = fix_23();
+}
+function tester14() {
+    //output becomes the return of countYZ
+    //returns the amount of words ending in
+    //y or z in a string of words
+    //ie: fray fez = 2
+    //ie: cold fez = 1
+    document.getElementById("output13").innerHTML = countYZ();
+}
+function tester15() {
+    //output becomes the return of endOther
+    //given two strings returns true if one
+    //is at the end of another, (not case sensitive)
+    //ie: "abVow" and "crabVow" would return true
+    //str.toLowerCase() returns the lowercase version
+    //of string str
+    document.getElementById("output14").innerHTML = endOther();
+}
+function tester16() {
+    //output becomes the return of starOut
+    //given a string, the return is the string, but
+    //where there is a "*" character, the characters
+    //to its right and left are gone
+    //ie: "canni*bal" returns "cannal"
+    document.getElementById("output15").innerHTML = starOut();
+}
+function tester17() {
+    //output becomes the return of getSandwich
+    //given a string, returns only the party of the
+    //string between two slices of bread
+    //ie: "plasticbreadhoneybread" returns "honey"
+    document.getElementById("output16").innerHTML = getSandwich();
+}
+function tester18() {
+    //output becomes the return of canBalance
+    //given an array of numbers, returns true
+    //if the array can be split with equal
+    //weight on either side
+    //ie: ([5,2,1,8]) would return true
+    document.getElementById("output17").innerHTML = canBalance();
+}
+function tester19() {
+    //output becomes the return of countClumps
+    //given an array, the return is the amount
+    //of clumps in the array, clumps being
+    //two adjacent same integers
+    //ie: ([1,1,4,5,7,7,5]) returns 2
+    document.getElementById("output18").innerHTML = countClumps();
+}
+function tester20() {
+    //output becomes the return of evenlySpaced
+    //given an array of three integers
+    //returns true if a sequence of three integers
+    //is evenly spaced
+    //ie: ([6,5,4]) true
+    //ie: ([1,3,4]) false
+    document.getElementById("output19").innerHTML = evenlySpaced();
 }
