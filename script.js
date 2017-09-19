@@ -143,20 +143,12 @@ function firstLast6(param1) {
     //write eleventh method
     var last = param1.length - 1;
     var final = param1[last];
-    if(final == 6) {
-        return true;
-    } else if(param1[0] == 6) {
-        return true;
-    } else {
-        return false;
-    }
+    return final == 6 || param1[0] == 6;
+
 }
 function has_23(param1) {
     //write twelfth method
-    if(param1[0] == 3 || param1[0] == 2 || param1[1] == 3 || param1[1] == 2) {
-        return true;
-    }
-    return false;
+    return param1[0] == 3 || param1[0] == 2 || param1[1] == 3 || param1[1] == 2;
 }
 function fix_23(param1) {
     //write thirteenth method
@@ -195,21 +187,19 @@ function endOther(param1) {
 //write fifteenth method
     var str1 = param1[0];
     var str2 = param1[1];
+    var str3 = 0;
+    var str4 = 0;
     var diffValue = Math.abs(str1.length - str2.length);
     if(str1.length > str2.length) {
-        var str3 = str1;
-        var str4 = str2;
+        str3 = str1;
+        str4 = str2;
     } else if (str1.length < str2.length) {
-        var str3 = str2;
-        var str4 = str1;
+        str3 = str2;
+        str4 = str1;
     } else if (str1.length == str2.length) {
-        if(str1 == str2) {
-            return true;
-        } else {
-            return false;
-        }
+        return str1 == str2;
     }
-    var sub = str3.substring(0+diffValue);
+    var sub = str3.substring(diffValue);
     if(sub == str4) {
         return true;
     } else if (sub != str4) {
@@ -243,16 +233,12 @@ function canBalance(param1) {
     for(var i = 0; i < param1.length; i++) {
         sum += param1[i];
     }
-    for(var i = 0; i < param1.length; i++) {
+    for( i = 0; i < param1.length; i++) {
         if(sumOther < sum/2) {
             sumOther += param1[i]
         }
     }
-    if(sumOther == sum/2) {
-        return true;
-    } else {
-        return false;
-    }
+    return sumOther == sum/2;
 }
 function countClumps(param1) {
 //write nineteenth method
@@ -270,11 +256,7 @@ function evenlySpaced(param1) {
 //write twentieth method
     var diff1 = param1[1] - param1[0];
     var diff2 = param1[2] - param1[1];
-    if(diff1 == diff2) {
-        return true;
-    } else {
-        return false;
-    }
+    return diff1 == diff2;
 }
 
 function tester1() {
@@ -350,13 +332,13 @@ function tester11() {
         //var y = ["c","a","l","l","m","e"];
     //firstLast6 gets an array of integers
     //if the first or last is "6" return true
-    document.getElementById("output10").innerHTML = firstLast6([6,5,2,3,7,6,7,2]);
+    document.getElementById("output10").innerHTML = firstLast6([4,5,2,3,7,6,7,6]);
 }//firstLast6
 function tester12() {
     //output becomes the return of has_23
     //given an array of two integers,
     //return true if either is a two or three
-    document.getElementById("output11").innerHTML = has_23([3,1]);
+    document.getElementById("output11").innerHTML = has_23([2,1]);
 }//has_23
 function tester13() {
     //output becomes the return of fix_23
